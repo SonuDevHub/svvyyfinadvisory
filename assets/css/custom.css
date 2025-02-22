@@ -1,0 +1,285 @@
+/* CUSTOM CSS added here  */
+
+.bg-olive{ background-color: var(--bs-olive);}
+.text-olive{ color: #304830;}
+
+
+/* MAIN MENU CSS - ACTIVE - DESKTOP & MOBILE  */
+.main-nav > ul > li > a.active , .mobile-menu li > a.active {
+    color: #000;
+    font-weight: bolder;
+}
+
+/* Banner Text CSS */
+.intro11-slider .slider-content .title { font-size: 60px;}
+
+
+/* SERVICES CARDS CSS  */
+.cards_services{ background-color: var(--bs-light); }
+/*.cards_services:hover { box-shadow: 0px 5px 10px var(--bs-gray); }*/
+.cards_services:hover {  border:1px solid var(--bs-gray); }
+
+.fa{line-height: 2;}
+
+
+.funfact-section:after {
+    background-color: rgba(48, 72, 48, 0.8);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.sidebar { height: 310px; }
+.sidebar_testing{margin-bottom: 5px;}
+
+.sidebar_testing .list-group-item:hover {
+  background-color: var(--color-primary); 
+  color: #000000; 
+}
+
+
+/* BREADCRUM CSS  */
+.breadcrumbs-area {
+    padding: 0px 0;
+    background: #E9ECEF;
+}
+
+.breadcrumbs-area .breadcrumb-content ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.breadcrumbs-area .breadcrumb-content .title {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #fff;
+}
+.breadcrumbs-area  .breadcrumb-content ul li a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1;
+}
+.breadcrumbs-area .breadcrumb-content ul li {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1;
+}
+.breadcrumbs-area .breadcrumb-content ul li:after {
+    color: #fff;
+    content: '>';
+    font-size: 16px;
+    vertical-align: middle;
+    padding: 0 10px;
+    font-weight: 400;
+}
+.section-content { margin-top: 150px; }
+
+
+
+
+
+/* INNER PAGES BANNER CSS  */
+.pageheader_overlay{ background-color: #2F4930; position: absolute; width: 100%; height: 400px; opacity: 0.7; _box-shadow:inset 0px 0px 100px 100px #000; }
+.pageheader{background-color: #2F4930; width: 100%; height: 400px; background-repeat: no-repeat; background-position: center center; 
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/ }
+.pageheader_about {background-image: url("../images/banner/innerpages/aboutus.jpg");  }
+.pageheader_team {background-image: url("../images/banner/innerpages/our-teams.jpg");  }
+.pageheader_reach {background-image: url("../images/banner/innerpages/our-reach.jpg");  }
+.pageheader_services {background-image: url("../images/banner/innerpages/services.jpg");  }
+.pageheader_service1 {background-image: url("../images/banner/innerpages/mortgage-valuations-image.jpg");  }
+.pageheader_service2 {background-image: url("../images/banner/innerpages/construction-finance-valuation.jpg");  } 
+.pageheader_service3 {background-image: url("../images/banner/innerpages/approved-project-finance.jpg");  }
+.pageheader_service4 {background-image: url("../images/banner/innerpages/technical-audit-due-diligence.jpg");  } 
+.pageheader_service5 {background-image: url("../images/banner/innerpages/lenders-independent-engineering.jpg");  }
+.pageheader_service6 {background-image: url("../images/banner/innerpages/plant-machinery.png");  } 
+.pageheader_contact {background-image: url("../images/banner/innerpages/contactus.jpg");  } 
+.pageheader_clients {background-image: url("../images/banner/innerpages/clients.jpg");  }
+.pageheader_pastprojects {background-image: url("../images/banner/innerpages/past-projects.jpg");  }
+.pageheader_awards {background-image: url("../images/banner/innerpages/awards.jpg");  }
+.pageheader_testimonial {background-image: url("../images/banner/innerpages/testimonial.jpg");  }
+.pageheader_career {background-image: url("../images/banner/innerpages/career.jpg");  }
+.pageheader_lifeatbov {background-image: url("../images/banner/innerpages/lifeatbov.jpg");  }
+.pageheader_imagegallery {background-image: url("../images/banner/innerpages/imagegallery.jpg");  }
+.pageheader_applynow {background-image: url("../images/banner/innerpages/applynow.jpg");  } 
+.pageheader_thankyou {background-image: url("../images/banner/innerpages/thankyou.jpg");  }
+
+
+/* CLIENTS LOGOS CSS  */
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 0px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+}
+
+/*.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 255));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0), rgb(255, 255, 255));
+}*/
+
+.logo_items {
+  display: inline-block;
+  animation: 9s slides infinite linear;
+}
+
+.logos:hover .logo_items {
+  animation-play-state: paused;
+}
+
+.logo_items img{
+  height: 20px;
+  border:1px solid #eee;
+  margin:9px;
+}
+
+/*  CLIENTS PAGE GRID CSS - CLIENT PAGE */
+.clientslogo{ border:1px solid #eee; margin:0; padding:10px; }
+
+
+
+.filter-button {
+    padding: 7px; /* Adjust as needed */
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-block; /* Added to allow centering */
+}
+.filter-button:hover {
+    background-color: var(--bs-olive);
+    color: #fff;
+}
+
+.filter-button.active {
+    background-color: var(--bs-olive);
+    color: #fff;
+}
+
+.button-container {
+    text-align: center; /* Centers the buttons */
+}
+
+.filter-gallery {
+    display: block;
+}
+
+.image-container {
+    margin-top: 1em;
+    column-count: 2; /*column-count helps to create a grid layout*/
+    column-gap: 5px;
+}
+
+.gallery-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid #eee;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        column-count: 1; /*adjusted to 1 column for mobile*/
+    }
+}
+
+
+
+/* IMAGE GALLERY - LIFE at BOV CSS  */
+.image-container-life {
+    column-count: 2; /*column-count helps to create a grid layout*/
+    column-gap: 5px;
+    /*margin-top: 1em;*/
+}
+.gallery-item-life {
+    margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+    .image-container-life {
+        column-count: 1; /*adjusted to 1 column for mobile*/
+    }
+}
+
+
+.iconboxarea{ margin-bottom:30px;  }
+.icon_box{ padding:10px;}
+.icon_bg{ background-color:#aebe9c; }
+.icon_bgtext{ background-color:#697d53; padding: 6%; text-align: center;}
+@media only screen and (max-width: 768px) {
+.iconboxarea {width: 100%; text-align: center;}
+}
+
+/* IMAGE GALLERY - LIFE at BOV CSS  */
+.image-container-projects {
+    column-count: 2; /*column-count helps to create a grid layout*/
+    column-gap: 9px;
+    /*margin-top: 1em;*/
+}
+.gallery-item-projects {
+    display: inline-block;
+    background-color: #000;
+    margin-bottom: 9px;
+}
+.gallery-item-projects:hover {
+    background-color: #304830;
+    opacity: 0.9;
+}
+.gallery-item-projects-title {
+/*    position: absolute;*/
+    text-align: center;
+    color: #fff;
+    padding: 9px;
+}
+@media (max-width: 768px) {
+    .image-container-projects {
+        column-count: 1; /*adjusted to 1 column for mobile*/
+    }
+}
